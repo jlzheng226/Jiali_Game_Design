@@ -1,61 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jiali Zheng Game Design Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         body {
-            background-image: url('pic04.jpg');
+            background-image: url('images/pic04.jpg');
             background-size: cover;
-            color: white;
-            font-family: Arial, sans-serif;
+            background-position: center;
+            color: white; /* Text color set to white */
         }
-        header {
+        h1, h2 {
+            text-align: center; /* Centering headings */
+        }
+        #project-links {
             text-align: center;
-            padding: 20px;
+            margin: 20px 0; /* Space between links and other content */
         }
-        section {
-            margin: 40px;
+        .project-section {
+            text-align: center; /* Centering project sections */
+            margin: 40px 0; /* Space between project sections */
         }
-        .project {
-            margin-top: 20px;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            border-bottom: 1px solid white;
+        .image-placeholder {
+            width: 80%; /* Adjust width as needed */
+            height: 200px; /* Placeholder height */
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white for visibility */
+            margin: 0 auto 20px; /* Centering placeholder */
+            border: 1px dashed white; /* Dashed border for visual indication */
         }
     </style>
 </head>
-<body>
+<body class="is-preload">
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm a game design enthusiast with experience in Unity game engine development. Here are some of my key projects!</p>
+        <h1>Jiali Zheng</h1>
+        <h2 style="font-size: 0.8em;">Game Design Portfolio</h2>
+        <div id="project-links">
+            <a href="#one">Legend of Zelda Remake</a> |
+            <a href="#two">Home Decoration</a> |
+            <a href="#three">Third Project</a>
+        </div>
     </header>
 
-    <section>
-        <h2>Zelda Remake Project</h2>
-        <div class="project">
-            <p>This project is a remake of The Legend of Zelda in Unity, designed during EECS 494. You can download it below:</p>
-            <a href="zelda_project_download_link" download>Download Zelda Remake</a>
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 1.2em;">The portfolio is comprised of three parts. The first is the remake of The Legend of Zelda dungeon, a group project of two teammates. The second is an individual 2.5D game project featuring house decorating (Still in development). The third is a group project (Still in development).</p>
         </div>
     </section>
 
-    <section>
-        <h2>Fox Home Decoration Project</h2>
-        <div class="project">
-            <p>This project features a red fox decorating its home in Unity. You can download it below:</p>
-            <a href="fox_project_download_link" download>Download Fox Home Decoration</a>
-        </div>
+    <!-- Project One -->
+    <section id="one" class="wrapper style2 spotlights project-section">
+        <h2>Legend of Zelda Remake - Dungeon</h2>
+        <div class="image-placeholder">Image Placeholder for Zelda Remake</div>
+        <p>The Legend of Zelda, a renowned game developed by Nintendo and first released in 1986, has captivated players for decades...</p>
+        <ul class="actions">
+            <li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Click here to download</a></li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Other Projects</h2>
-        <div class="project">
-            <p>Stay tuned for more projects to be added to this section!</p>
-        </div>
+    <!-- Project Two -->
+    <section id="two" class="wrapper style2 spotlights project-section">
+        <h2>Personal Project - Little Fox Decorating Home</h2>
+        <div class="image-placeholder">Image Placeholder for Home Decoration Project</div>
+        <p>I made a cozy game featuring a red fox that wants to decorate its home. The game is 2D with a pixel art style...</p>
+        <ul class="actions">
+            <li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Click here to download</a></li>
+        </ul>
     </section>
+
+    <!-- Project Three -->
+    <section id="three" class="wrapper style2 spotlights project-section">
+        <h2>Third Project - Description</h2>
+        <div class="image-placeholder">Image Placeholder for Third Project</div>
+        <p>Description of the third project goes here...</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
-
