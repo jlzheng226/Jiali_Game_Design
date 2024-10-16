@@ -1,116 +1,91 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Jiali Zheng Game Design Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Custom styling */
-			nav ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				justify-content: space-around;
-				background-color: #333;
-			}
-			nav ul li {
-				display: inline;
-			}
-			nav ul li a {
-				display: block;
-				color: white;
-				text-align: center;
-				padding: 14px 20px;
-				text-decoration: none;
-			}
-			nav ul li a:hover {
-				background-color: #111;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-		<!-- Sidebar - Top Navigation Links -->
-		<nav>
-			<ul>
-				<li><a href="#intro">Home</a></li>
-				<li><a href="#zelda-project">Zelda Remake Project</a></li>
-				<li><a href="#fox-project">Home Decoration Project</a></li>
-			</ul>
-		</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        /* Apply a background image for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pic_04.jpg'); /* Use your image as the background */
+            background-size: cover;  /* Ensures the image covers the entire page */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+            color: white; /* Makes all text white */
+        }
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+        /* Styling for the navigation menu */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensures the navbar stays on top of other content */
+        }
 
-			<!-- Intro Section -->
-			<section id="intro" class="wrapper style1 fullscreen fade-up" style="background-image: url('images/pic04.jpg'); background-size: cover; background-position: center;">
-				<div class="inner">
-					<h1 style="font-family: 'Times New Roman', Times, serif; font-size: 3.5em; color: white;">Jiali Zheng Game Design Portfolio</h1>
-					<p style="font-family: 'Times New Roman', Times, serif; font-size: 1.2em; color: white;">
-						Welcome to my portfolio! Below you can explore my projects, including a remake of the legendary Zelda dungeon and my personal project featuring a cozy game with a fox.
-					</p>
-				</div>
-			</section>
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-			<!-- Zelda Project Section -->
-			<section id="zelda-project" class="wrapper style2 spotlights">
-				<section>
-					<div class="content">
-						<div class="inner">
-							<h2>Legend of Zelda Remake - Dungeon</h2>
-							<a href="#" class="image">
-								<img src="images/portofolio_1.jpg" alt="Portfolio Image" style="float: right; width: auto; height: auto;" />
-							</a>
-							<p>
-								For this remake project, I took on the design of the majority of those iconic dungeon enemies, including the Aquamentus, Keese, and Wallmaster. I recreated their movements and designed weapons to balance gameplay. 
-							</p>
-							<ul class="actions">
-								<li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Download the project</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
+        /* Add padding to sections to leave space for the fixed navbar */
+        section {
+            padding: 100px 20px 20px; /* Padding from the top to accommodate the fixed navbar */
+            min-height: 100vh; /* Ensures each section takes up the entire viewport height */
+            background-color: rgba(0, 0, 0, 0.6); /* Add semi-transparent black background to improve text readability */
+            margin-bottom: 20px;
+        }
 
-			<!-- Fox Project Section -->
-			<section id="fox-project" class="wrapper style2 spotlights">
-				<section>
-					<div class="content">
-						<div class="inner">
-							<h2>Personal Project - Little Fox Decorating Home</h2>
-							<p>
-								This cozy game features a red fox that wants to decorate its home. It's a 2D pixel art game with home decoration mechanics (still in development).
-							</p>
-							<a href="#" class="image"><img src="images/fox_1.jpg" alt="Fox Project" /></a>
-							<ul class="actions">
-								<li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Download the project</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
+        /* Ensure images are responsive */
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
 
-		</div>
+        /* Style for section headings */
+        h2 {
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
 
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Jiali Zheng. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+    </style>
+</head>
+<body>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#project1">Project 1</a>
+        <a href="#project2">Project 2</a>
+        <a href="#project3">Project 3</a>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="project1">
+        <h2>Project 1: Title of First Project</h2>
+        <p>This is the description of the first project. Here, you can write details about the project.</p>
+        <img src="path-to-your-image1.jpg" alt="Image for Project 1">
+    </section>
+
+    <section id="project2">
+        <h2>Project 2: Title of Second Project</h2>
+        <p>This is the description of the second project. Here, you can write details about the project.</p>
+        <img src="path-to-your-image2.jpg" alt="Image for Project 2">
+    </section>
+
+    <section id="project3">
+        <h2>Project 3: Title of Third Project</h2>
+        <p>This is the description of the third project. Here, you can write details about the project.</p>
+        <img src="path-to-your-image3.jpg" alt="Image for Project 3">
+    </section>
+
+</body>
 </html>
