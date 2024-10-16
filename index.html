@@ -12,6 +12,9 @@
             background-size: cover;
             background-position: center;
             color: white; /* Text color set to white */
+            font-size: 200%; /* Double the size of all the text */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Padding around the body */
         }
         h1, h2 {
             text-align: center; /* Centering headings */
@@ -21,8 +24,14 @@
             margin: 20px 0; /* Space between links and other content */
         }
         .project-section {
-            text-align: center; /* Centering project sections */
             margin: 40px 0; /* Space between project sections */
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items to the start */
+        }
+        .project-section img {
+            max-width: 80%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between image and text */
         }
         .image-placeholder {
             width: 80%; /* Adjust width as needed */
@@ -30,6 +39,12 @@
             background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white for visibility */
             margin: 0 auto 20px; /* Centering placeholder */
             border: 1px dashed white; /* Dashed border for visual indication */
+        }
+        .left {
+            width: 50%; /* Left side width */
+        }
+        .right {
+            width: 50%; /* Right side width */
         }
     </style>
 </head>
@@ -55,32 +70,43 @@
 
     <!-- Project One -->
     <section id="one" class="wrapper style2 spotlights project-section">
-        <h2>Legend of Zelda Remake - Dungeon</h2>
-        <img src="images/portofolio_1.jpg" alt="Zelda Remake" class="image" />
-        <p>The Legend of Zelda, a renowned game developed by Nintendo and first released in 1986, has captivated players for decades...  For this remake project, I took on the design of the majority of those iconic dungeon enemies, including the formidable Aquamentus, the swift Keese, the elusive Wallmaster and so on — creatures beloved by fans of the series. A key responsibility of mine was studying their movements in detail to faithfully recreate their behavior. I also developed a system to track the health and attack power of both enemies and Link, ensuring balanced gameplay. Additionally, I contributed to the design of various weapons, enhancing the combat experience. </p>
-        <img src="images/portofolio_2.jpg" alt="Zelda Remake" class="image" />
-        <p>In addition to recreating the original gameplay, my teammate and I created a new level where we fought enemies at the bottom of the sea through returnee mounts. I designed the movement of the enemies of the sea and the turtles。</p>
-        <ul class="actions">
-            
-            <li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Click here to download</a></li>
-        </ul>
+        <div class="left">
+            <h2>Legend of Zelda Remake - Dungeon</h2>
+            <img src="images/portofolio_1.jpg" alt="Zelda Remake" class="image" />
+            <img src="images/portofolio_2.jpg" alt="Zelda Remake" class="image" />
+        </div>
+        <div class="right">
+            <p>The Legend of Zelda, a renowned game developed by Nintendo and first released in 1986, has captivated players for decades...  For this remake project, I took on the design of the majority of those iconic dungeon enemies, including the formidable Aquamentus, the swift Keese, the elusive Wallmaster and so on — creatures beloved by fans of the series. A key responsibility of mine was studying their movements in detail to faithfully recreate their behavior. I also developed a system to track the health and attack power of both enemies and Link, ensuring balanced gameplay. Additionally, I contributed to the design of various weapons, enhancing the combat experience.</p>
+            <p>In addition to recreating the original gameplay, my teammate and I created a new level where we fought enemies at the bottom of the sea through returnee mounts. I designed the movement of the enemies of the sea and the turtles.</p>
+            <ul class="actions">
+                <li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Click here to download</a></li>
+            </ul>
+        </div>
     </section>
 
     <!-- Project Two -->
     <section id="two" class="wrapper style2 spotlights project-section">
-        <h2>Personal Project - Little Fox Decorating Home</h2>
-        <img src="images/fox_1.jpg" alt="Decoration" class="image" />
-        <p>In this individual project, I made a cozy game featuring a red fox that wants to decorate its home. The game is 2D with a pixel art style. I created the fox sprite by myself.</p>
-        <ul class="actions">
-            <li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Click here to download</a></li>
-        </ul>
+        <div class="left">
+            <h2>Personal Project - Little Fox Decorating Home</h2>
+            <img src="images/fox_1.jpg" alt="Decoration" class="image" />
+        </div>
+        <div class="right">
+            <p>In this individual project, I made a cozy game featuring a red fox that wants to decorate its home. The game is 2D with a pixel art style. I created the fox sprite by myself.</p>
+            <ul class="actions">
+                <li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Click here to download</a></li>
+            </ul>
+        </div>
     </section>
 
     <!-- Project Three -->
     <section id="three" class="wrapper style2 spotlights project-section">
-        <h2>Third Project - Description</h2>
-        <div class="image-placeholder">Image Placeholder for Third Project</div>
-        <p>Description of the third project goes here...</p>
+        <div class="left">
+            <h2>Third Project - Description</h2>
+            <div class="image-placeholder">Image Placeholder for Third Project</div>
+        </div>
+        <div class="right">
+            <p>Description of the third project goes here...</p>
+        </div>
     </section>
 
     <!-- Footer -->
