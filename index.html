@@ -1,36 +1,100 @@
-<!-- Project One -->
-<section id="one" class="wrapper style2 spotlights project-section">
-    <h2 style="margin-bottom: 30px;">Legend of Zelda Remake - Dungeon</h2>
-    <div class="project-content">
-        <img src="images/portofolio_1.jpg" alt="Zelda Remake" class="image" />
-        <p style="font-size: 2.4em;">The Legend of Zelda, a renowned game developed by Nintendo and first released in 1986, has captivated players for decades... For this remake project, I took on the design of the majority of those iconic dungeon enemies, including the formidable Aquamentus, the swift Keese, the elusive Wallmaster and so on — creatures beloved by fans of the series. A key responsibility of mine was studying their movements in detail to faithfully recreate their behavior. I also developed a system to track the health and attack power of both enemies and Link, ensuring balanced gameplay. Additionally, I contributed to the design of various weapons, enhancing the combat experience.</p>
-    </div>
-    <div class="project-content">
-        <img src="images/portofolio_2.jpg" alt="Zelda Remake" class="image" />
-        <p style="font-size: 2.4em;">In addition to recreating the original gameplay, my teammate and I created a new level where we fought enemies at the bottom of the sea through returnee mounts. I designed the movement of the enemies of the sea and the turtles.</p>
-    </div>
-    <ul class="actions">
-        <li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Click here to download</a></li>
-    </ul>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add your custom CSS here */
+        .project-content {
+            display: flex; /* Use flexbox for horizontal alignment */
+            margin-bottom: 40px; /* Space between project contents */
+        }
 
-<!-- Project Two -->
-<section id="two" class="wrapper style2 spotlights project-section">
-    <h2 style="margin-bottom: 30px;">Personal Project - Little Fox Decorating Home</h2>
-    <div class="project-content">
-        <img src="images/fox_1.jpg" alt="Decoration" class="image" />
-        <p style="font-size: 2.4em;">In this individual project, I made a cozy game featuring a red fox that wants to decorate its home. The game is 2D with a pixel art style. I created the fox sprite by myself.</p>
-    </div>
-    <ul class="actions">
-        <li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Click here to download</a></li>
-    </ul>
-</section>
+        .image-container, .text-container {
+            width: 50%; /* Each takes half the width of the parent container */
+        }
 
-<!-- Project Three -->
-<section id="three" class="wrapper style2 spotlights project-section">
-    <h2 style="margin-bottom: 30px;">Third Project - To Be Continued</h2> <!-- Added "To Be Continued" -->
-    <div class="project-content">
-        <div class="image-placeholder">Image Placeholder for Third Project</div>
-        <p style="font-size: 2.4em;">Description of the third project goes here...</p>
-    </div>
-</section>
+        .image-container img, .image-placeholder {
+            width: 100%; /* Ensure images fill the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center; /* Center text vertically */
+        }
+
+        .text-container p {
+            margin: 0; /* Remove default margin for paragraphs */
+            font-size: 2em; /* Increase text size */
+        }
+
+        h2 {
+            margin-bottom: 30px; /* Space below headings */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Self Introduction</h1>
+        <p>Hi! I’m Jiali Zheng, a passionate game designer with experience in creating engaging and immersive game experiences. My projects range from remaking classic titles to developing original concepts. I have a strong foundation in game design principles and technical skills, which allow me to bring my creative ideas to life. I’m excited to share some of my work with you!</p>
+    </header>
+
+    <!-- Project One -->
+    <section id="one" class="wrapper style2 spotlights project-section">
+        <h2>Legend of Zelda Remake - Dungeon</h2>
+        <div class="project-content">
+            <div class="image-container">
+                <img src="images/portofolio_1.jpg" alt="Zelda Remake" class="image" />
+            </div>
+            <div class="text-container">
+                <p>The Legend of Zelda, a renowned game developed by Nintendo and first released in 1986, has captivated players for decades... For this remake project, I took on the design of the majority of those iconic dungeon enemies, including the formidable Aquamentus, the swift Keese, the elusive Wallmaster and so on — creatures beloved by fans of the series. A key responsibility of mine was studying their movements in detail to faithfully recreate their behavior. I also developed a system to track the health and attack power of both enemies and Link, ensuring balanced gameplay. Additionally, I contributed to the design of various weapons, enhancing the combat experience.</p>
+            </div>
+        </div>
+        <div class="project-content">
+            <div class="image-container">
+                <img src="images/portofolio_2.jpg" alt="Zelda Remake" class="image" />
+            </div>
+            <div class="text-container">
+                <p>In addition to recreating the original gameplay, my teammate and I created a new level where we fought enemies at the bottom of the sea through returnee mounts. I designed the movement of the enemies of the sea and the turtles.</p>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><a href="https://drive.google.com/drive/folders/1LpyGbuqYDybmYdg8cB0t8WzrAeRFD0Q3?usp=sharing" class="button">Click here to download</a></li>
+        </ul>
+    </section>
+
+    <!-- Project Two -->
+    <section id="two" class="wrapper style2 spotlights project-section">
+        <h2>Personal Project - Little Fox Decorating Home</h2>
+        <div class="project-content">
+            <div class="image-container">
+                <img src="images/fox_1.jpg" alt="Decoration" class="image" />
+            </div>
+            <div class="text-container">
+                <p>In this individual project, I made a cozy game featuring a red fox that wants to decorate its home. The game is 2D with a pixel art style. I created the fox sprite by myself.</p>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><a href="https://drive.google.com/drive/folders/1Ukqbts3dBKBaPgAN9PtIZREYL7Sij3L7?dmr=1&ec=wgc-drive-hero-goto" class="button">Click here to download</a></li>
+        </ul>
+    </section>
+
+    <!-- Project Three -->
+    <section id="three" class="wrapper style2 spotlights project-section">
+        <h2>Third Project - To Be Continued</h2>
+        <div class="project-content">
+            <div class="image-container">
+                <div class="image-placeholder">Image Placeholder for Third Project</div>
+            </div>
+            <div class="text-container">
+                <p>Description of the third project goes here...</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
