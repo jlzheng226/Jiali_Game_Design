@@ -3,91 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Portfolio</title>
+    <title>Portfolio</title>
     <style>
-        /* Apply a background image for the entire page */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('images/pic_04.jpg'); /* Use your image as the background */
-            background-size: cover;  /* Ensures the image covers the entire page */
-            background-position: center;  /* Centers the image */
-            background-attachment: fixed; /* Keeps the image fixed when scrolling */
-            color: white; /* Makes all text white */
-        }
-
-        /* Styling for the navigation menu */
-        nav {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-            padding: 15px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000; /* Ensures the navbar stays on top of other content */
-        }
-
-        nav a {
+            background-image: url('pic04.jpg');
+            background-size: cover;
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
+            font-family: Arial, sans-serif;
         }
-
-        /* Add padding to sections to leave space for the fixed navbar */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
         section {
-            padding: 100px 20px 20px; /* Padding from the top to accommodate the fixed navbar */
-            min-height: 100vh; /* Ensures each section takes up the entire viewport height */
-            background-color: rgba(0, 0, 0, 0.6); /* Add semi-transparent black background to improve text readability */
-            margin-bottom: 20px;
+            margin: 40px;
         }
-
-        /* Ensure images are responsive */
-        section img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
+        .project {
+            margin-top: 20px;
         }
-
-        /* Style for section headings */
-        h2 {
-            border-bottom: 2px solid white;
-            padding-bottom: 10px;
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
         }
-
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm a game design enthusiast with experience in Unity game engine development. Here are some of my key projects!</p>
+    </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#project1">Project 1</a>
-        <a href="#project2">Project 2</a>
-        <a href="#project3">Project 3</a>
-       
-    </nav>
-
-    <!-- Projects Section -->
-    <section id="project1">
-        <h2>Project 1: The Legend of Zelda Remake</h2>
-        <p>This project is a remake of The Legend of Zelda game. The project involved redesigning classic game levels with updated graphics and mechanics.</p>
-        <img src="zelda_project_image.jpg" alt="Image for Zelda Project">
+    <section>
+        <h2>Zelda Remake Project</h2>
+        <div class="project">
+            <p>This project is a remake of The Legend of Zelda in Unity, designed during EECS 494. You can download it below:</p>
+            <a href="zelda_project_download_link" download>Download Zelda Remake</a>
+        </div>
     </section>
 
-    <section id="project2">
-        <h2>Project 2: Fox Home Decoration Game</h2>
-        <p>This project is about a red fox decorating its home. The gameplay revolves around collecting items and arranging them within the fox’s house to create a cozy environment.</p>
-        <img src="fox_project_image.jpg" alt="Image for Fox Home Decoration Project">
+    <section>
+        <h2>Fox Home Decoration Project</h2>
+        <div class="project">
+            <p>This project features a red fox decorating its home in Unity. You can download it below:</p>
+            <a href="fox_project_download_link" download>Download Fox Home Decoration</a>
+        </div>
     </section>
 
-    <section id="project3">
-        <h2>Project 3: Space Exploration Interface</h2>
-        <p>This project is focused on building augmented reality interfaces for space exploration tasks, with an emphasis on user experience in low-gravity environments.</p>
-        <img src="space_project_image.jpg" alt="Image for Space Exploration Project">
+    <section>
+        <h2>Other Projects</h2>
+        <div class="project">
+            <p>Stay tuned for more projects to be added to this section!</p>
+        </div>
     </section>
-
-   
 </body>
 </html>
+
