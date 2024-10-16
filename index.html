@@ -11,72 +11,11 @@
             background-image: url('images/pic04.jpg'); /* Set the background image */
             background-size: cover; /* Cover the entire background */
             color: white; /* Set text color to white */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set a modern font */
-            margin: 0;
-            padding: 0;
+            font-family: 'Cursive', sans-serif; /* Set a script-like font */
         }
 
-        /* Full page layout for self-introduction */
-        .introduction {
-            display: grid;
-            grid-template-columns: 1fr 2fr; /* Left column takes 1/3 of the space, right takes 2/3 */
-            height: 100vh; /* Full height of the viewport */
-            padding: 50px; /* Add some padding around the content */
-        }
-
-        .name-email {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start; /* Align text to the left */
-            padding-left: 50px;
-        }
-
-        .name-email h1 {
-            font-size: 3em; /* Larger name size */
-            font-weight: bold;
-            margin: 0;
-        }
-
-        .name-email p {
-            font-size: 1.2em; /* Adjust font size for email */
-            font-style: italic; /* Italicize the email */
-            margin-top: 10px;
-            margin-bottom: 0;
-        }
-
-        .self-intro {
-            display: flex;
-            justify-content: center;
-            align-items: center; /* Center the text vertically */
-            padding-right: 50px;
-        }
-
-        .self-intro p {
-            font-size: 1.8em; /* Larger paragraph text */
-            line-height: 1.6; /* Increase line spacing for readability */
-            text-align: justify; /* Justify the text */
-            margin: 0;
-        }
-
-        /* Heading styles */
-        h1, h2 {
-            font-family: 'Georgia', serif; /* Elegant font for headings */
-        }
-
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 2.2em;
-            margin-bottom: 30px;
-        }
-
-        /* Additional styling for project content (if needed) */
         .project-content {
-            display: flex;
+            display: flex; /* Use flexbox for horizontal alignment */
             margin-bottom: 40px; /* Space between project contents */
         }
 
@@ -95,27 +34,67 @@
         }
 
         .text-container p {
-            margin: 0;
-            font-size: 1.5em; /* Adjust project text size */
+            margin: 0; /* Remove default margin for paragraphs */
+            font-size: 2em; /* Increase text size */
+        }
+
+        h1 {
+            margin-bottom: 30px; /* Space below the main heading */
+            font-size: 2.5em; /* Increase main heading size */
+        }
+
+        h2 {
+            margin-bottom: 30px; /* Space below project headings */
+            font-size: 2em; /* Adjust heading size */
+        }
+
+        /* Style for the self-introduction section */
+        .self-introduction {
+            display: flex; /* Flexbox for left-right alignment */
+            height: 100vh; /* Full-page height */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+        }
+
+        .contact-info {
+            width: 30%; /* Left side with contact information */
+            text-align: left;
+            padding-right: 20px;
+            font-size: 1.5em;
+        }
+
+        .intro-text {
+            width: 70%; /* Right side with introduction text */
+            text-align: right;
+            font-size: 2.5em; /* Large font for intro text */
+        }
+
+        .button {
+            font-size: 1.5em; /* Double size for download links */
+            padding: 10px 20px;
+            background-color: #f0a500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #ffbf00; /* Hover effect for the button */
         }
     </style>
 </head>
 <body>
 
-    <div class="introduction">
-        <div class="name-email">
-            <h1>Jiali Zheng</h1>
-            <p>jlzheng@umich.edu</p>
+    <header class="self-introduction">
+        <div class="contact-info">
+            <h1>Jiali Zheng</h1> <!-- Name on the left -->
+            <p>jlzheng@umich.edu</p> <!-- Email on the left -->
+            <p>608-977-3457</p> <!-- Phone number below email -->
         </div>
-        <div class="self-intro">
-            <p>
-                Hi! I’m Jiali Zheng, a passionate game designer with experience in creating engaging and immersive game experiences. 
-                My projects range from remaking classic titles to developing original concepts. I have a strong foundation in game 
-                design principles and technical skills, which allow me to bring my creative ideas to life. I’m excited to share some 
-                of my work with you!
-            </p>
+        <div class="intro-text">
+            <p>Hi! I’m Jiali Zheng, a passionate game designer with experience in creating engaging and immersive game experiences. My projects range from remaking classic titles to developing original concepts. I have a strong foundation in game design principles and technical skills, which allow me to bring my creative ideas to life. I’m excited to share some of my work with you!</p> <!-- Introduction text on the right -->
         </div>
-    </div>
+    </header>
 
     <!-- Project One -->
     <section id="one" class="wrapper style2 spotlights project-section">
