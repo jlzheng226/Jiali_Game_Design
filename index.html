@@ -8,7 +8,7 @@
     <style>
         /* Add your custom CSS here */
         body {
-            
+            background-image: url('images/pic04.jpg'); /* Set the background image */
             background-size: cover; /* Cover the entire background */
             color: white; /* Set text color to white */
             font-family: "Microsoft YaHei", serif; /* Set text to Times New Roman */
@@ -17,6 +17,13 @@
         .project-content {
             display: flex; /* Use flexbox for horizontal alignment */
             margin-bottom: 100px; /* Increased space between project contents */
+        }
+
+         .hero-container {
+            background-image: url('images/LightHouse_2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Optional for parallax effect */
         }
 
         .image-container, .text-container {
@@ -88,9 +95,6 @@
             text-align: center;
             margin: 20px 0;
             font-size: 1.8em;
-             background-image: url('images/LightHouse_2.png');
-            background-size: cover;
-            background-position: center;
         }
 
         .project-links a {
@@ -105,7 +109,8 @@
     </style>
 </head>
 <body>
-
+    
+<div class="hero-container">
     <!-- Project Links Section -->
     <section class="project-links">
         <p>
@@ -125,7 +130,8 @@
             <p>你好！我是郑佳利，在这个作品集中，我列出了我用Unity制作的三个作品。</p> <!-- Introduction text on the right -->
         </div>
     </header>
-
+</div>
+    
     <!-- Project One -->
     <section id="one" class="wrapper style2 spotlights project-section">
         <h2>塞尔达重制  地牢</h2>
