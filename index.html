@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
         /* Add your custom CSS here */
+
+         /* 添加这些样式 */
+    .title-with-button {
+        display: flex;
+        align-items: center; /* 垂直居中 */
+        gap: 20px; /* 标题和按钮之间的间距 */
+        margin-bottom: 20px; /* 与下方内容的间距 */
+    }
+    
+    .title-with-button h2 {
+        margin: 0; /* 移除h2默认的margin */
+    }
+    
+    .title-with-button .actions {
+        margin: 0; /* 移除ul默认的margin */
+        padding: 0; /* 移除ul默认的padding */
+    }
         body {
             background-image: url('images/pic04.jpg'); /* Set the background image */
             background-size: cover; /* Cover the entire background */
@@ -151,6 +168,13 @@
         <ul class="actions">
             <li><a href="https://jiali226.itch.io/new-zelda-legend-sea-dungeon" class="button">点击下载</a></li>
         </ul>
+
+        <div class="title-with-button">
+        <h2>塞尔达重制 地牢</h2>
+        <ul class="actions">
+            <li><a href="https://jiali226.itch.io/new-zelda-legend-sea-dungeon" class="button">点击下载</a></li>
+        </ul>
+    </div>
         <div class="project-content">
             <div class="image-container">
                 <img src="images/portofolio_1.jpg" alt="Zelda Remake" class="image" />
