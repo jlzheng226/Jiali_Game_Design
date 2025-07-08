@@ -66,23 +66,11 @@
             gap: 20px;
         }
 
-        /* New horizontal media row */
-        .media-row {
-            display: flex;
-            gap: 20px;
-            width: 100%;
-        }
-
-        .media-row-item {
-            flex: 1;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
         .text-column {
             width: 45%;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Media Elements */
@@ -99,11 +87,42 @@
             display: block;
         }
 
-        .media-item video {
+        /* Video Container with Fixed Aspect Ratio */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            object-fit: cover;
             background-color: #000;
+        }
+
+        /* Right Side Image (matches video size) */
+        .right-image-container {
+            margin-top: auto; /* Pushes to bottom of text column */
+            position: relative;
+            padding-bottom: 56.25%; /* Same as video */
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .right-image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         /* Additional Image Grid for Section 2 */
@@ -132,7 +151,7 @@
             font-family: 'Times New Roman', serif;
             font-size: 24px;
             line-height: 1.6;
-            margin: 0;
+            margin: 0 0 20px 0;
             text-align: justify;
         }
 
@@ -205,10 +224,6 @@
                 width: 100%;
             }
             
-            .media-row {
-                flex-direction: column;
-            }
-            
             .title-with-button {
                 flex-direction: column;
                 align-items: flex-start;
@@ -235,6 +250,11 @@
 
             .image-grid {
                 flex-direction: column;
+            }
+
+            .video-container,
+            .right-image-container {
+                padding-bottom: 75%; /* 4:3 aspect ratio on mobile */
             }
         }
     </style>
@@ -263,38 +283,38 @@
     </header>
 </div>
     
-   <!-- Project One -->
-<section id="one" class="wrapper style2 spotlights project-section">
-    <div class="title-with-button">
-        <h2>塞尔达重制 地牢</h2>
-        <ul class="actions">
-            <li><a href="https://jiali226.itch.io/new-zelda-legend-sea-dungeon" class="button">点击下载</a></li>
-        </ul>
-    </div>
-    
-    <div class="project-content">
-        <div class="media-column">
-            <div class="media-item">
-                <img src="images/portofolio_1.jpg" alt="Zelda Remake" />
+    <!-- Project One -->
+    <section id="one" class="wrapper style2 spotlights project-section">
+        <div class="title-with-button">
+            <h2>塞尔达重制 地牢</h2>
+            <ul class="actions">
+                <li><a href="https://jiali226.itch.io/new-zelda-legend-sea-dungeon" class="button">点击下载</a></li>
+            </ul>
+        </div>
+        
+        <div class="project-content">
+            <div class="media-column">
+                <div class="media-item">
+                    <img src="images/portofolio_1.jpg" alt="Zelda Remake" />
+                </div>
+                <div class="video-container">
+                    <video src="Zelda_41s.mp4" controls></video>
+                </div>
             </div>
-            <div class="media-item">
-                <video src="Zelda_41s.mp4" controls></video>
+            <div class="text-column">
+                <p>
+                《塞尔达传说》是由任天堂开发并于 1986 年首次发行的知名游戏，数十年来一直深受玩家喜爱。
+                在本次重制项目中，我负责设计了大部分标志性的地牢敌人，包括强大的阿奎曼提斯（Aquamentus）、迅捷的蝙蝠怪（Keese）、
+                神出鬼没的墙手（Wallmaster）等，这些都是系列粉丝都喜爱并喜爱的经典怪物。我的一项核心职责是深入研究他们的移动模式，
+                忠实还原他们的行为。此外，我还开发了一套系统，用于追踪敌人和林克的生命值及攻击力，以确保战斗的平衡性。同时，我也参
+                与了多种武器的设计，进一步提升了战斗体验。
+                </p>
+                <div class="right-image-container">
+                    <img src="images/portofolio_3.jpg" alt="Zelda Remake" />
+                </div>
             </div>
         </div>
-        <div class="text-column">
-            <p>
-            《塞尔达传说》是由任天堂开发并于 1986 年首次发行的知名游戏，数十年来一直深受玩家喜爱。
-            在本次重制项目中，我负责设计了大部分标志性的地牢敌人，包括强大的阿奎曼提斯（Aquamentus）、迅捷的蝙蝠怪（Keese）、
-            神出鬼没的墙手（Wallmaster）等，这些都是系列粉丝都喜爱并喜爱的经典怪物。我的一项核心职责是深入研究他们的移动模式，
-            忠实还原他们的行为。此外，我还开发了一套系统，用于追踪敌人和林克的生命值及攻击力，以确保战斗的平衡性。同时，我也参
-            与了多种武器的设计，进一步提升了战斗体验。
-            </p>
-            <div class="right-side-image">
-                <img src="images/portofolio_3.jpg" alt="Zelda Remake" />
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Project Two -->
     <section id="two" class="wrapper style2 spotlights project-section">
@@ -310,7 +330,7 @@
                 <div class="media-item">
                     <img src="images/Images_P3.jpg" alt="Seed of Hope" />
                 </div>
-                <div class="media-item">
+                <div class="video-container">
                     <video src="images/seed_of_hope.mp4" controls></video>
                 </div>
             </div>
@@ -327,13 +347,13 @@
         <!-- Three images added horizontally beneath the content -->
         <div class="image-grid">
             <div class="image-grid-item">
-                <img src="3_ending.png" alt="Seed of Hope Screenshot 1">
+                <img src="images/seed_image1.jpg" alt="Seed of Hope Screenshot 1">
             </div>
             <div class="image-grid-item">
-                <img src="Seed_Of_Hope_2.png" alt="Seed of Hope Screenshot 2">
+                <img src="images/seed_image2.jpg" alt="Seed of Hope Screenshot 2">
             </div>
             <div class="image-grid-item">
-                <img src="desert_1.png" alt="Seed of Hope Screenshot 3">
+                <img src="images/seed_image3.jpg" alt="Seed of Hope Screenshot 3">
             </div>
         </div>
     </section>
@@ -352,7 +372,7 @@
                 <div class="media-item">
                     <img src="images/fox_1.jpg" alt="Little Fox's Home" />
                 </div>
-                <div class="media-item">
+                <div class="video-container">
                     <video src="little-fox.mp4" controls></video>
                 </div>
             </div>
