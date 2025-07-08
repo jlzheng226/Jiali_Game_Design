@@ -66,6 +66,20 @@
             gap: 20px;
         }
 
+        /* New horizontal media row */
+        .media-row {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .media-row-item {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
         .text-column {
             width: 45%;
             padding: 20px;
@@ -111,13 +125,6 @@
             width: 100%;
             height: auto;
             display: block;
-        }
-
-        /* Right Side Image for Section 1 */
-        .right-side-image {
-            width: 45%;
-            margin-left: 55%;
-            margin-top: 20px;
         }
 
         /* Text Styling */
@@ -198,6 +205,10 @@
                 width: 100%;
             }
             
+            .media-row {
+                flex-direction: column;
+            }
+            
             .title-with-button {
                 flex-direction: column;
                 align-items: flex-start;
@@ -220,11 +231,6 @@
             
             .intro-text {
                 margin-top: 30px;
-            }
-
-            .right-side-image {
-                width: 100%;
-                margin-left: 0;
             }
 
             .image-grid {
@@ -271,8 +277,13 @@
                 <div class="media-item">
                     <img src="images/portofolio_1.jpg" alt="Zelda Remake" />
                 </div>
-                <div class="media-item">
-                    <video src="Zelda_41s.mp4" controls></video>
+                <div class="media-row">
+                    <div class="media-row-item">
+                        <video src="Zelda_41s.mp4" controls></video>
+                    </div>
+                    <div class="media-row-item">
+                        <img src="images/portofolio_3.jpg" alt="Zelda Remake" />
+                    </div>
                 </div>
             </div>
             <div class="text-column">
@@ -283,13 +294,6 @@
                 忠实还原他们的行为。此外，我还开发了一套系统，用于追踪敌人和林克的生命值及攻击力，以确保战斗的平衡性。同时，我也参
                 与了多种武器的设计，进一步提升了战斗体验。
                 </p>
-            </div>
-        </div>
-        
-        <!-- Second image moved to right side beneath text -->
-        <div class="right-side-image">
-            <div class="media-item">
-                <img src="images/portofolio_2.jpg" alt="Zelda Remake" />
             </div>
         </div>
     </section>
