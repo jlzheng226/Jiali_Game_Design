@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            background-image: url('images/pic04.jpg');
+            background-size: cover;
+            color: white;
+            font-family: "Microsoft YaHei", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero-container {
+            background-image: url('images/LightHouse_2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Title with Button */
+        .title-with-button {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        
+        .title-with-button h2 {
+            margin: 0;
+            font-size: 3em;
+        }
+        
+        .title-with-button .actions {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Project Section Layout */
+        .project-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Media + Text Layout */
+        .project-content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .media-column {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .text-column {
+            width: 45%;
+            padding: 20px;
+        }
+
+        /* Media Elements */
+        .media-item {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .media-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .media-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #000;
+        }
+
+        /* Text Styling */
+        .text-column p {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* Button Styling */
+        .button {
+            font-size: 1.5em;
+            padding: 12px 24px;
+            background-color: #f0a500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            background-color: #ffbf00;
+            transform: translateY(-2px);
+        }
+
+        /* Self Introduction */
+        .self-introduction {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .contact-info {
+            width: 30%;
+            text-align: left;
+            padding-right: 20px;
+            font-size: 1.5em;
+        }
+
+        .intro-text {
+            width: 70%;
+            text-align: right;
+            font-size: 2.5em;
+        }
+
+        /* Project Links */
+        .project-links {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.8em;
+            padding-top: 40px;
+        }
+
+        .project-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .project-links a:hover {
+            color: #f0a500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .media-column, .text-column {
+                width: 100%;
+            }
+            
+            .title-with-button {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 0 20px;
+            }
+            
+            .self-introduction {
+                flex-direction: column;
+                height: auto;
+                padding: 80px 20px;
+                text-align: center;
+            }
+            
+            .contact-info, .intro-text {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+            
+            .intro-text {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<div class="hero-container">
+    <!-- Project Links Section -->
+    <section class="project-links">
+        <p>
+            <a href="#one">塞尔达重制</a> |
+            <a href="#two">希望之种</a> |
+            <a href="#three">小狐狸的家</a>
+        </p>
+    </section>
+
+    <header class="self-introduction">
+        <div class="contact-info">
+            <h1 style="color: white">郑佳利</h1>
+            <p style="color: white">jlz226@outlook.com</p>
+            <p style="color: white">+86 15021258274</p>
+        </div>
+        <div class="intro-text">
+            <p>你好！我是郑佳利，在这个作品集中，我列出了我用Unity制作的三个作品。</p>
+        </div>
+    </header>
+</div>
+    
+    <!-- Project One -->
+    <section id="one" class="wrapper style2 spotlights project-section">
+        <div class="title-with-button">
+            <h2>塞尔达重制 地牢</h2>
+            <ul class="actions">
+                <li><a href="https://jiali226.itch.io/new-zelda-legend-sea-dungeon" class="button">点击下载</a></li>
+            </ul>
+        </div>
+        
+        <div class="project-content">
+            <div class="media-column">
+                <div class="media-item">
+                    <img src="images/portofolio_1.jpg" alt="Zelda Remake" />
+                </div>
+                <div class="media-item">
+                    <video src="Zelda_41s.mp4" controls></video>
+                </div>
+            </div>
+            <div class="text-column">
+                <p>
+                《塞尔达传说》是由任天堂开发并于 1986 年首次发行的知名游戏，数十年来一直深受玩家喜爱。
+                在本次重制项目中，我负责设计了大部分标志性的地牢敌人，包括强大的阿奎曼提斯（Aquamentus）、迅捷的蝙蝠怪（Keese）、
+                神出鬼没的墙手（Wallmaster）等，这些都是系列粉丝都喜爱并喜爱的经典怪物。我的一项核心职责是深入研究他们的移动模式，
+                忠实还原他们的行为。此外，我还开发了一套系统，用于追踪敌人和林克的生命值及攻击力，以确保战斗的平衡性。同时，我也参
+                与了多种武器的设计，进一步提升了战斗体验。
+                </p>
+            </div>
+        </div>
+        
+        <div class="project-content">
+            <div class="media-column">
+                <div class="media-item">
+                    <img src="images/portofolio_2.jpg" alt="Zelda Remake" />
+                </div>
+            </div>
+            <div class="text-column">
+                <!-- Empty text column for alignment -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Two -->
+    <section id="two" class="wrapper style2 spotlights project-section">
+        <div class="title-with-button">
+            <h2>希望之种 双人小游戏</h2>
+            <ul class="actions">
+                <li><a href="https://sawyersantella.itch.io/seed-of-hope" class="button">点击下载</a></li>
+            </ul>
+        </div>
+        
+        <div class="project-content">
+            <div class="media-column">
+                <div class="media-item">
+                    <img src="images/Images_P3.jpg" alt="Seed of Hope" />
+                </div>
+                <div class="media-item">
+                    <video src="images/seed_of_hope.mp4" controls></video>
+                </div>
+            </div>
+            <div class="text-column">
+                <p>
+                    这是一款由五人团队开发的双人平台解谜游戏，灵感来源于经典的《火男与水女》系列。在游戏中，两名玩家必须合作，通过解谜和挑战关卡，寻找魔法——拯救世界免于沙漠化的关键。
+                    我在该项目中负责关卡设计、机制设计和美术创作。我的主要职责是设计并实现幽灵机制之一，这是游戏的核心玩法。该机制允许玩家使用手电筒反射光线来解谜。我利用Unity的光线
+                    检测（raycasting）来实现光线的准确反射与事件，保证其物理的合理性和可玩性。这一机制在游戏推进中起到了关键作用。我基于该机制设计了第三关，挑战玩家运用复杂的光线
+                    反射技巧，利用光线来攀爬并继续前进。除此之外，我利用 Aseprite 制作了简单的二维像素动画，用于游戏素材。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Three -->
+    <section id="three" class="wrapper style2 spotlights project-section">
+        <div class="title-with-button">
+            <h2>小狐狸的家</h2>
+            <ul class="actions">
+                <li><a href="https://jiali226.itch.io/interior-designer-little-fox" class="button">点击下载</a></li>
+            </ul>
+        </div>
+        
+        <div class="project-content">
+            <div class="media-column">
+                <div class="media-item">
+                    <img src="images/fox_1.jpg" alt="Little Fox's Home" />
+                </div>
+                <div class="media-item">
+                    <video src="little-fox.mp4" controls></video>
+                </div>
+            </div>
+            <div class="text-column">
+                <p> 
+                    在这个个人项目中，我设计并开发了一款温馨的2D游戏，采用了迷人的像素艺术风格，并以一只红色狐狸为主角。狐狸热爱室内设计，它通过拾取各种家具来装饰自己的温馨小屋。我特写了有关狐狸的精灵图，为效果视觉打造了独特的个人风格。
+
+                    玩家可以发挥创造力，拖动、旋转并放置家具，自由定制狐狸的家。本项目也是我对Unity Scroll Bar功能的探索，使玩家能够轻松浏览并选择不同的家具，提升交互体验。
+
+                    该项目展示了我在精灵图景、游戏机制开发方面的技能，以及我营造了丰富的视觉吸引力和主题性的游戏体验的能力。它体现了我对创造温暖、治愈系游戏的热情，希望为重症玩家带来欢乐与创意的体验。
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
