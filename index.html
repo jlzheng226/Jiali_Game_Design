@@ -92,6 +92,34 @@
             background-color: #000;
         }
 
+        /* Additional Image Grid for Section 2 */
+        .image-grid {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .image-grid-item {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .image-grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Right Side Image for Section 1 */
+        .right-side-image {
+            width: 45%;
+            margin-left: 55%;
+            margin-top: 20px;
+        }
+
         /* Text Styling */
         .text-column p {
             font-family: 'Times New Roman', serif;
@@ -193,6 +221,15 @@
             .intro-text {
                 margin-top: 30px;
             }
+
+            .right-side-image {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .image-grid {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -249,14 +286,10 @@
             </div>
         </div>
         
-        <div class="project-content">
-            <div class="media-column">
-                <div class="media-item">
-                    <img src="images/portofolio_2.jpg" alt="Zelda Remake" />
-                </div>
-            </div>
-            <div class="text-column">
-                <!-- Empty text column for alignment -->
+        <!-- Second image moved to right side beneath text -->
+        <div class="right-side-image">
+            <div class="media-item">
+                <img src="images/portofolio_2.jpg" alt="Zelda Remake" />
             </div>
         </div>
     </section>
@@ -286,6 +319,19 @@
                     检测（raycasting）来实现光线的准确反射与事件，保证其物理的合理性和可玩性。这一机制在游戏推进中起到了关键作用。我基于该机制设计了第三关，挑战玩家运用复杂的光线
                     反射技巧，利用光线来攀爬并继续前进。除此之外，我利用 Aseprite 制作了简单的二维像素动画，用于游戏素材。
                 </p>
+            </div>
+        </div>
+
+        <!-- Three images added horizontally beneath the content -->
+        <div class="image-grid">
+            <div class="image-grid-item">
+                <img src="images/seed_image1.jpg" alt="Seed of Hope Screenshot 1">
+            </div>
+            <div class="image-grid-item">
+                <img src="images/seed_image2.jpg" alt="Seed of Hope Screenshot 2">
+            </div>
+            <div class="image-grid-item">
+                <img src="images/seed_image3.jpg" alt="Seed of Hope Screenshot 3">
             </div>
         </div>
     </section>
